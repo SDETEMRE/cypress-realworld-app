@@ -43,14 +43,23 @@ describe("User Sign-up and Login", function () {
 
     // Login User
     cy.login(userInfo.username, userInfo.password);
+    cy.get('.MuiAvatar-root').should('be.visible');
+    cy.get('[data-test="user-onboarding-next"]').click();
+    cy.get('[data-test="user-onboarding-dialog-title"]').should('be.visible').and('contain', 'Create Bank Account');
+    cy.get('[name="bankName"]').type("Bank of Cypress");
+    cy.get('[name="routingNumber"]').type("123456789");
+    cy.get('[name="accountNumber"]').type("987654321");
+    cy.get('[data-test="bankaccount-submit"]').click();
+    cy.get('[data-test="user-onboarding-dialog-title"]').should('be.visible').and('contain', 'Finished');
 
-    // Logout User
-    if (isMobile()) {
-      cy.getBySel("sidenav-toggle").click();
-    }
-    cy.getBySel("sidenav-signout").click();
-    cy.location("pathname").should("eq", "/signin");
-    cy.visualSnapshot("Redirect to SignIn");
-    cy.get('.MuiAvatar-root').should('be.visible')  
+   
+    // // Logout User
+    // if (isMobile()) {
+    //   cy.getBySel("sidenav-toggle").click();
+    // }
+    // cy.getBySel("sidenav-signout").click();
+    // cy.location("pathname").should("eq", "/signin");
+    // cy.visualSnapshot("Redirect to SignIn");
+    
   });
 });

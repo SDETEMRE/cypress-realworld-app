@@ -76,15 +76,15 @@
       "modifiedAt": "2024-03-07T00:07:36.510Z"
     },
     {
-      "id": "2gTSWAOHp",
-      "uuid": "adfe0eb7-6249-4c0c-91df-b26a1c4e0598",
+      "id": "-A6txjNgO",
+      "uuid": "8e6d5d78-bda9-4c94-9e5f-96f57c3876fb",
       "firstName": "Bob",
       "lastName": "Ross",
       "username": "PainterJoy90",
-      "password": "$2a$10$Go31wCHt3rcs0YGDBBH5OuLBfgPoj7o4XKy3K/Pkq0MjDrtm7mxTq",
+      "password": "$2a$10$bleufmCJJAR./8KK09n6i.2ZHb1ghzvVPu0lDomdTdfqL82CUYgG6",
       "balance": 0,
-      "createdAt": "2026-10-15T13:16:56.672Z",
-      "modifiedAt": "2026-10-15T13:16:56.672Z"
+      "createdAt": "2026-10-15T13:27:49.350Z",
+      "modifiedAt": "2026-10-15T13:27:49.350Z"
     }
   ],
   "contacts": [
@@ -264,6 +264,17 @@
       "isDeleted": false,
       "createdAt": "2024-01-26T14:01:01.815Z",
       "modifiedAt": "2024-03-07T08:44:31.174Z"
+    },
+    {
+      "id": "JS-JSl_MN",
+      "uuid": "8020dda6-339b-4618-908b-39a9f5f55cdf",
+      "userId": "-A6txjNgO",
+      "bankName": "Bank of Cypress",
+      "accountNumber": "987654321",
+      "routingNumber": "123456789",
+      "isDeleted": false,
+      "createdAt": "2026-10-15T13:27:50.525Z",
+      "modifiedAt": "2026-10-15T13:27:50.525Z"
     }
   ],
   "transactions": [
