@@ -51,5 +51,6 @@ describe("User Sign-up and Login", function () {
     cy.getBySel("sidenav-signout").click();
     cy.location("pathname").should("eq", "/signin");
     cy.visualSnapshot("Redirect to SignIn");
+    cy.get('.MuiAvatar-root').should('be.visible')  
   });
 });
